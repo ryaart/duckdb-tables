@@ -1,0 +1,11 @@
+[package]
+name = "duckdb-tables"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+license = "MIT"
+description = "Read-only DuckDB table functions from Rust: typed columns, projection pushdown, settings, self-description."
+
+[dependencies]
+duckdb = { version = "~1.10505.0", features = ["loadable-extension"] }
+rayon = "1"

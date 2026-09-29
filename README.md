@@ -43,4 +43,4 @@ What it provides:
 
 Caveat: duckdb-rs doesn't expose the raw bind-info pointer, so `Bind::setting` reads it from `BindInfo`'s single private field. A compile-time size check guards that, and duckdb-rs is pinned (`~1.10505.0`).
 
-The extensions depend on this crate from `ssh://git@github.com/ryaart/duckdb-tables.git` (branch `main`, pinned by each `Cargo.lock`), with `net.git-fetch-with-cli` so Cargo uses your SSH key. While this repo is private, CI can't fetch it without a deploy key.
+The extensions depend on this crate from `https://github.com/ryaart/duckdb-tables` (branch `main`, pinned by each `Cargo.lock`).
